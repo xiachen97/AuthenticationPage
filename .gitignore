@@ -1,0 +1,21 @@
+# Eclipse specific files
+.classpath
+.project
+.settings/
+bin/
+target/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Java specific files
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven specific files
+.mvn/
+pom.xml
