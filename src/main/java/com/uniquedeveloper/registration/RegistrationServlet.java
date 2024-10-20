@@ -87,15 +87,22 @@ public class RegistrationServlet extends HttpServlet {
 		    if (con != null) {
 		        try {
 		            con.close();
-		            AbandonedConnectionCleanupThread.checkedShutdown();
+		            
 
 		        } catch (SQLException e) {
 		        	//auto generated catch block;
 		            e.printStackTrace();
 		        }
 		    }
-		}
-		
+		}	
 	}
+	
+	
+	@Override
+    public void destroy() {
+        // Ensure abandoned connections are cleaned up when the servlet is destroyed
+        AbandonedConnectionCleanupThread.checkedShutdown();
+        super.destroy();
+    }
 
 }
