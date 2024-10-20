@@ -19,3 +19,4 @@ Thumbs.db
 # Maven specific files
 .mvn/
 pom.xml
+/build/
