@@ -55,8 +55,8 @@
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="logout">Logout</a></li>
-					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="Logout"><%=session.getAttribute("name") %></a></li>
+					<li class="nav-item mx-0 mx-lg-1 bg-danger"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="Logout" style="text-transform: none;">Hello, <%=session.getAttribute("name") %></a></li>
 					
 				</ul>
 			</div>
@@ -326,7 +326,7 @@
 				<div class="col-lg-4 mb-5 mb-lg-0">
 					<h4 class="text-uppercase mb-4">Location</h4>
 					<p class="lead mb-0">
-						2215 John Daniel Drive <br /> Clark, MO 65243
+						123 Eve <br /> Rocherster, MI 48307
 					</p>
 				</div>
 				<!-- Footer Social Icons-->
@@ -355,7 +355,7 @@
 	<!-- Copyright Section-->
 	<div class="copyright py-4 text-center text-white">
 		<div class="container">
-			<small>Copyright &copy; Your Website 2021</small>
+			<small>Copyright &copy; Your Website 2024</small>
 		</div>
 	</div>
 	<!-- Portfolio Modals-->
