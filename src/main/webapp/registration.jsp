@@ -38,8 +38,8 @@
 									type="email" name="email" id="email" placeholder="Your Email" />
 							</div>
 							<div class="form-group">
-								<label for="pass"><i class="zmdi zmdi-lock"></i></label> <input
-									type="password" name="pass" id="pass" placeholder="Password" />
+								<label for="password"><i class="zmdi zmdi-lock"></i></label> <input
+									type="password" name="password" id="password" placeholder="Password" />
 							</div>
 							<div class="form-group">
 								<label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
@@ -89,8 +89,6 @@
 		var status=document.getElementById("status").value;
 		if(status=="success"){
 			swal("Congrats","Account Created Successfully","success");//swal() is a function from the SweetAlert library, which is used to create beautiful, customizable pop-up alerts in web applications
-		}else{
-			swal("Sorry","try again!","failed");
 		}
 	
 	</script>
